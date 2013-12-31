@@ -31,5 +31,5 @@ This will expose your Pi using its `hostname` on the local network. If the `host
 * Clone this repo on your Pi: `git clone https://github.com/projectweekend/Pi-Flashing-LED.git`
 * Install Python requirements from inside the cloned repo directory: `pip install -r requirements.txt`
 * Fire up the web server: `sudo python server.py`
-* Hit site from any browser on your local network: `http://raspberrypi.local`
+* Hit site from any browser on your local network (the URL in the screen shot below is different because I changed the hostname of my Pi): `http://raspberrypi.local`
 ![Screenshot](https://raw.github.com/projectweekend/Pi-Flashing-LED/master/screenshot.png)
