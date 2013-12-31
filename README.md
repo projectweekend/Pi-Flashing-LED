@@ -6,9 +6,7 @@ Make red and green LEDs flash using GPIO
 ## Prerequisites:
 
 ### Have git installed
-Git makes every day a little brighter. Don't code without it. Seriously. Do it:
-
-`sudo apt-get install git`
+Git makes every day a little brighter. Don't code without it. Seriously. Do it: `sudo apt-get install git`
 
 ### Use a virtualenv
 Ok, technically this step is optional. You can skip it and still install all of the Python dependencies in the instructions, but you will feel dirty later. Trust me, [virtualenv](http://www.virtualenv.org/) is a Python developer's best friend.
@@ -19,9 +17,7 @@ Ok, technically this step is optional. You can skip it and still install all of 
 * Stop your environment (when you're done using the server): `deactivate`
 
 ### Local network config
-Your Raspberry Pi needs to be connected to your local network (Wifi or Ethernet). If you don't have `avahi-daemon` installed, go take care of that: 
-
-`sudo apt-get install avahi-daemon`
+Your Raspberry Pi needs to be connected to your local network (Wifi or Ethernet). If you don't have `avahi-daemon` installed, go take care of that: `sudo apt-get install avahi-daemon`
 
 This will expose your Pi using its `hostname` on the local network. If the `hostname` is still set as default, you can access your Pi at `raspberrypi.local`. When the web server is running you can access it in a browser at `http://raspberrypi.local`
 
