@@ -1,4 +1,4 @@
 Pi-Flashing-LED
 ===============
 
-Make red and greed LEDs flash using GPIO
+Make red and green LEDs flash using GPIO
