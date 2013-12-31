@@ -14,11 +14,13 @@ def main_route():
 @app.route('/flash/red', methods=['POST'])
 def red_route():
     leds.flash_red()
+    return "success"
 
 
 @app.route('/flash/green', methods=['POST'])
 def green_route():
     leds.flash_green()
+    return "success"
 
 
 if __name__ == '__main__':
