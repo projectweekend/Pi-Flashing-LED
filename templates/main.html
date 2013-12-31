@@ -8,11 +8,23 @@
         $( document ).ready( function() {
 
             $( "#flash-green" ).click( function () {
-                jQuery.post( "/flash/green" );
+
+                $( "#green-is-flashing" ).toggle();
+
+                jQuery.post( "/flash/green", function ( data ) {
+                    $( "#green-is-flashing" ).toggle();
+                } );
+
             } );
 
             $( "#flash-red" ).click( function () {
-                jQuery.post( "/flash/red" );
+                
+                $( "#red-is-flashing" ).toggle();
+                
+                jQuery.post( "/flash/red", function ( data ) {
+                    $( "#red-is-flashing" ).toggle();
+                } );
+                
             } );
 
         } );
@@ -26,6 +38,11 @@
             <div class="page-header">
                 <h1>Pi Flashing LED</h1>
             </div>
+
+            <div id="green-is-flashing" class="alert alert-success" style="display: none;">The green light is currently flashing</div>
+
+            <div id="red-is-flashing" class="alert alert-danger" style="display: none;">The red light is currently flashing</div>            
+
             <div class="btn-toolbar">
                 <button id="flash-green" class="btn btn-success">Flash Green</button>
                 <button id="flash-red" class="btn btn-danger">Flash Red</button>
