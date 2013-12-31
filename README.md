@@ -1,7 +1,7 @@
 Pi-Flashing-LED
 ===============
 
-Make red and green LEDs flash using GPIO
+Make red and green LEDs flash using GPIO and control it from any browser on the local network.
 
 ## Prerequisites:
 
