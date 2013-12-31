@@ -5,12 +5,16 @@
     <script type="text/javascript" src="/static/js/jquery-2.0.3.min.js"></script>
     <script type="text/javascript">
 
-        $( "flash-green" ).click( function () {
-            jQuery.post( "/flash/green" );
-        } );
+        $( document ).ready( function() {
 
-        $( "flash-red" ).click( function () {
-            jQuery.post( "/flash/red" );
+            $( "flash-green" ).click( function () {
+                jQuery.post( "/flash/green" );
+            } );
+
+            $( "flash-red" ).click( function () {
+                jQuery.post( "/flash/red" );
+            } );
+
         } );
 
     </script>
