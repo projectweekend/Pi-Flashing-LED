@@ -3,6 +3,17 @@
     <title>Pi Flashing LED</title>
     <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
     <script type="text/javascript" src="/static/js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript">
+
+        $( "flash-green" ).click( function () {
+            jQuery.post( "/flash/green" );
+        } );
+
+        $( "flash-red" ).click( function () {
+            jQuery.post( "/flash/red" );
+        } );
+
+    </script>
 </head>
 <body>
 
@@ -12,8 +23,8 @@
                 <h1>Pi Flashing LED</h1>
             </div>
             <div class="btn-toolbar">
-                <button class="btn btn-success">Flash Green</button>
-                <button class="btn btn-danger">Flash Red</button>
+                <button id="flash-green" class="btn btn-success">Flash Green</button>
+                <button id="flash-red" class="btn btn-danger">Flash Red</button>
             </div>
         </div>
     </div>
