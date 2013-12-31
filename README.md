@@ -3,7 +3,7 @@ Pi-Flashing-LED
 
 Make red and green LEDs flash using GPIO
 
-# Prerequisites:
+## Prerequisites:
 
 ### Have git installed
 Git makes every day a little brighter. Don't code without it. Seriously. Do it:
@@ -18,18 +18,18 @@ Ok, technically this step is optional. You can skip it and still install all of 
 * Start your new environment: `source ./call_it_whatever/bin/activate`
 * Stop your environment (when you're done using the server): `deactivate`
 
-### Local Network Config
+### Local network config
 Your Raspberry Pi needs to be connected to your local network (Wifi or Ethernet). If you don't have `avahi-daemon` installed, go take care of that: 
 
 `sudo apt-get install avahi-daemon`
 
 This will expose your Pi using its `hostname` on the local network. If the `hostname` is still set as default, you can access your Pi at `raspberrypi.local`. When the web server is running you can access it in a browser at `http://raspberrypi.local`
 
-### Physical LED Config
+### Physical LED config
 * Green LED connected on GPIO 18
 * Red LED connected on GPIO 23
 
-# Instructions:
+## Instructions:
 
 * Make sure your `virtualenv` is activated (see section above)
 * Clone this repo on your Pi: `git clone https://github.com/projectweekend/Pi-Flashing-LED.git`
