@@ -13,7 +13,7 @@ GPIO.setup(RED_LED, GPIO.OUT)
 def flash_led(led_to_flash):
     
     i = 0
-    while i <= 10:
+    while i <= 5:
         
         if i % 2 == 0:
             GPIO.output(led_to_flash, True)
