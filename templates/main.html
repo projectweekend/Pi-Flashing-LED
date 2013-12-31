@@ -10,9 +10,11 @@
             $( "#flash-green" ).click( function () {
 
                 $( "#green-is-flashing" ).toggle();
+                $( ".btn-toolbar" ).toggle();
 
                 jQuery.post( "/flash/green", function ( data ) {
                     $( "#green-is-flashing" ).toggle();
+                    $( ".btn-toolbar" ).toggle();
                 } );
 
             } );
@@ -20,11 +22,13 @@
             $( "#flash-red" ).click( function () {
                 
                 $( "#red-is-flashing" ).toggle();
+                $( ".btn-toolbar" ).toggle();
                 
                 jQuery.post( "/flash/red", function ( data ) {
                     $( "#red-is-flashing" ).toggle();
+                    $( ".btn-toolbar" ).toggle();
                 } );
-                
+
             } );
 
         } );
