@@ -19,3 +19,6 @@ while i <= 10:
         GPIO.output(RED_LED, True)
     i += 1
     time.sleep(2)
+
+GPIO.output(GREEN_LED, False)
+GPIO.output(RED_LED, False)
